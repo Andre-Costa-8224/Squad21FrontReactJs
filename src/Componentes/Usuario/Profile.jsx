@@ -110,7 +110,8 @@ function Perfil() {
         className="text-light border bg-primary"
         style={{
           margin: "auto",
-          width: "15%",
+          fontWeight: "bold",
+          width: "fit-content",
           textAlign: "center",
           padding: "8px",
           borderRadius: "5px",
