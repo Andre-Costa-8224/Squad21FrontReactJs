@@ -351,15 +351,26 @@ main section h2 a:hover{
 }
 .displayz{
   display: flex;
-  font-size: 80px;
+  align-items: center;
+  justify-content: center;
+}
+
+.displayz h1{
   align-items: center;
   text-align: center;
-  flex-direction: column;
+  font-size: 72px;
 }
+
 .linksfontesz{
   background-color: #30a6d9;
   font-style: normal;
   border-radius: 3px;
+}
+
+@media (max-width: 520px){
+  .displayz h1{
+    font-size: xx-large;
+  }
 }
 
 @media (max-width: 500px) {
@@ -489,7 +500,7 @@ main section h2 a:hover{
   text-align: center;
 }
 
-@media (max-width: 1202px){
+@media (max-width: 1000px){
   .index{
   flex-direction: column;
   }

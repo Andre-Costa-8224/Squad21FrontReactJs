@@ -35,6 +35,7 @@ function Login() {
         localStorage.setItem("user", JSON.stringify(input.email));
         setUser(input);
         window.alert("vá para perfil");
+        window.location.assign('/')
         return(
           "ok"
         )

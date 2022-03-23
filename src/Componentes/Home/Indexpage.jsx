@@ -20,8 +20,8 @@ const Indexhome = () => {
         </div>
         <div className="index">
           <div className="bvd">
-            <div className="text-center">
-              <h1 className="displayz">
+            <div className="text-center displayz">
+              <h1>
                 Welcome <br /> Bien venido(a) <br /> أهلا بك <br /> Bienvenue{" "}
                 <br /> Bem Vindo(a)
               </h1>
