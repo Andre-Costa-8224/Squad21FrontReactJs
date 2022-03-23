@@ -34,18 +34,24 @@ function Login() {
         window.alert("Bem vindo! " + log.nome);
         localStorage.setItem("user", JSON.stringify(input.email));
         setUser(input);
-        window.location.assign("/perfil");
+        window.alert("vá para perfil");
         return(
           "ok"
         )
-      } else {
-        window.alert("um ou mais campos estão incorretos");
-        return(
-          "algo deu errado"
-        )
       }
+      return("...")
     });
   };
+
+  const userStorage = localStorage.getItem("user");
+
+  if (userStorage !== null) {
+    return (
+      <div className="app-header">
+        <h1 style={{ textAlign: "center" }}>Acesso não autorizado!</h1>
+      </div>
+    );
+  }
 
   return (
     <div className="app-header">

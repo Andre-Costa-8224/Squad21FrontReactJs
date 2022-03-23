@@ -13,7 +13,7 @@ const AvaliacaoCreate = () => {
       tipo: tipo.current.value,
       avaliacoes: avaliacao.current.value,
     })
-      .then(() => window.location.assign("/avaliacaoindex"))
+      .then(() => window.alert("comentário enviado"))
       .catch((err) => window.alert(err));
   };
 

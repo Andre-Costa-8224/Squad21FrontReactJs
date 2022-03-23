@@ -17,7 +17,7 @@ function ModalEdit(props) {
       email: email.current.value,
       dadiva: dadiva.current.value,
     })
-      .then(() => window.location.reload())
+      .then(() => window.alert("atualizado"))
       .catch((err) => {
         window.alert(err);
         console.log(err);

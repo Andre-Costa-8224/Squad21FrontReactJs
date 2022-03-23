@@ -50,7 +50,7 @@ const CreateAtender = () => {
         dadiva: ajuda,
       },
     })
-      .then(() => window.location.assign("/atenderindex"))
+      .then(() => window.alert("Atendido"))
       .catch((err) => window.alert(err));
   };
 

@@ -18,7 +18,7 @@ const SolicitarCriar = () => {
       email: email.current.value,
       dadiva: dadiva.current.value,
     })
-      .then(() => window.location.assign("/solicitarindex"))
+      .then(() => window.alert("solicitado!"))
       .catch((err) => window.alert(err));
   };
 

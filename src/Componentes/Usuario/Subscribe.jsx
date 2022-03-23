@@ -19,10 +19,20 @@ function Cadastro() {
     })
       .then(() => {
         window.alert("Usuário cadastrado com sucesso!");
-        window.location.assign("/login");
+        window.alert("vá para login");
       })
       .catch((err) => window.alert(err));
   };
+
+  const userStorage = localStorage.getItem("user");
+
+  if (userStorage !== null) {
+    return (
+      <div className="app-header">
+        <h1 style={{ textAlign: "center" }}>Acesso não autorizado!</h1>
+      </div>
+    );
+  }
 
   return (
     <div className="app-header">

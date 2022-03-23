@@ -17,7 +17,7 @@ function ModalEdit(props) {
       senha: pass.current.value,
       role: role.current.value,
     })
-      .then(() => window.location.reload())
+      .then(() => window.alert("usuário atualizado!"))
       .catch((err) => {
         window.alert(err);
         console.log(err);
@@ -44,7 +44,7 @@ function ModalEdit(props) {
               <span className="text-danger"></span>
             </div>
             <div className="form-group">
-              <label className="control-label">Telefone</label>
+              <label className="control-label">Email</label>
               <input
                 className="form-control"
                 defaultValue={props.dado.email}
@@ -54,8 +54,9 @@ function ModalEdit(props) {
               <span className="text-danger"></span>
             </div>
             <div className="form-group">
-              <label className="control-label">Email</label>
+              <label className="control-label">Senha</label>
               <input
+                type={"password"}
                 className="form-control"
                 defaultValue={props.dado.senha}
                 ref={pass}

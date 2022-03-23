@@ -8,6 +8,8 @@ function Perfil() {
 
   const [dadousu, setDadoUsu] = useState([]);
 
+  var perfilusu = <div></div>
+
   var usuId = "";
 
   const [show, setShow] = useState(false);
@@ -32,7 +34,7 @@ function Perfil() {
     if (dado.email === user) {
       return (usuId = dado.userId);
     }
-    return console.log("Usuário não encontrado");
+    return "";
   });
 
   if (user.email === "") {
@@ -60,6 +62,48 @@ function Perfil() {
     }
   };
 
+  dadousu.map((dado) => {
+    if (dado.email === user) {
+      return (
+        perfilusu = (
+          <div key={dado.id}>
+          <p>Nome:</p>
+          <p style={{ paddingLeft: "20px" }}>
+            {dado.nome}
+          </p>
+          <p>Email:</p>
+          <p style={{ paddingLeft: "20px" }}>
+            {dado.email}
+          </p>
+          <p>Classificação:</p>
+          <p style={{ paddingLeft: "20px" }}>
+            {dado.role}
+          </p>
+          <div key={dado.id}>
+            <button
+              className="btn btn-warning"
+              onClick={() => handleShow(dado)}
+            >
+              ALTERAR
+            </button>
+            <br />
+            <br />
+            <button className="btn btn-danger" onClick={deletar}>
+              DELETAR
+            </button>
+            <br />
+            <br />
+            <button className="btn btn-primary" onClick={handleLogout}>
+              SAIR
+            </button>
+          </div>
+        </div>
+        )
+      );
+    }
+    return("")
+  })
+
   return (
     <div className="app-header">
       <h2
@@ -76,42 +120,7 @@ function Perfil() {
       </h2>
       <section className="section">
         <article className="row">
-          {dadousu.map((dado) => {
-            return (
-              <div key={dado.id}>
-                <p>Nome:</p>
-                <p style={{ paddingLeft: "20px" }}>
-                  {user === dado.email ? dado.nome : ""}
-                </p>
-                <p>Email:</p>
-                <p style={{ paddingLeft: "20px" }}>
-                  {user === dado.email ? dado.email : ""}
-                </p>
-                <p>Classificação:</p>
-                <p style={{ paddingLeft: "20px" }}>
-                  {user === dado.email ? dado.role : ""}
-                </p>
-                <div key={dado.id}>
-                  <button
-                    className="btn btn-warning"
-                    onClick={() => handleShow(dado)}
-                  >
-                    ALTERAR
-                  </button>
-                  <br />
-                  <br />
-                  <button className="btn btn-danger" onClick={deletar}>
-                    DELETAR
-                  </button>
-                  <br />
-                  <br />
-                  <button className="btn btn-primary" onClick={handleLogout}>
-                    SAIR
-                  </button>
-                </div>
-              </div>
-            );
-          })}
+          {perfilusu}
         </article>
         <article className=""></article>
       </section>

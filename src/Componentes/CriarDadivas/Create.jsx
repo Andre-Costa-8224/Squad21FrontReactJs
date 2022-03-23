@@ -16,7 +16,7 @@ const CriarCreate = () => {
       email: email.current.value,
       dadiva: dadiva.current.value,
     })
-      .then((res) => window.location.assign("/criarindex"))
+      .then((res) => window.alert("criado"))
       .catch((err) => window.alert(err));
   };
 

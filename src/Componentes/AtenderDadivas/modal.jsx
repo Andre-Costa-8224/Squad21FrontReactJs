@@ -45,7 +45,7 @@ function ModalEdit(props) {
         dadiva: ajuda,
       },
     })
-      .then(() => window.location.assign("/atenderindex"))
+      .then(() => window.alert("atualizado"))
       .catch((err) => window.alert(err));
   }
 

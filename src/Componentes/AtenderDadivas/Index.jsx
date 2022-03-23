@@ -27,7 +27,7 @@ const IndexAtender = () => {
     const conf = window.confirm("Tem certeza que deseja deletar?");
     if (conf) {
       Api.delete(`/atenderdadivas/${id}`)
-        .then(() => window.location.reload())
+        .then(() => window.alert("deletado"))
         .catch((err) => window.alert(err));
     } else {
       window.location.reload();

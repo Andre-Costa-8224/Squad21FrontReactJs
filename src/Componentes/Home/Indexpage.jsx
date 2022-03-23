@@ -10,15 +10,18 @@ const Indexhome = () => {
         >
           <div className="jumb">
             <p className="frasepreta" style={{ color: "rgb(0,0,0)" }}>
-              Para refugiados recomeçar não é uma opção. É a unica escolha.
+              Para os refugiados, recomeçar não é uma opção.
+              <br></br>
+              É a única escolha. 
+              <br></br>
+              Para nós, ajudar é uma oportunidade!
             </p>
-            <p className="frasepreta">Para nós, ajudar é uma oportunidade.</p>
           </div>
         </div>
         <div className="index">
           <div className="bvd">
             <div className="text-center">
-              <h1 className="display-4">
+              <h1 className="displayz">
                 Welcome <br /> Bien venido(a) <br /> أهلا بك <br /> Bienvenue{" "}
                 <br /> Bem Vindo(a)
               </h1>
@@ -27,13 +30,14 @@ const Indexhome = () => {
           <div>
             <img src={galera} alt="galera" className="pessoasimg" />
           </div>
+
         </div>
       </header>
 
       <main className="bgprin">
         <section className="section">
           <article>
-            <h1>Dádivas</h1>
+            <h1 className="tituloPrincipal">Dádivas</h1>
             <p>
               Nosso site busca antes de tudo ajudar refugiados, pessoas que por
               motivos extremos precisaram deixar seu país e pedir abrigo a

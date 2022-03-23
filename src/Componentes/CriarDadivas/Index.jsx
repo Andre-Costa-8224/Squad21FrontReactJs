@@ -29,7 +29,7 @@ const CriarIndex = () => {
     const conf = window.confirm("Tem certeza que deseja deletar?");
     if (conf) {
       Api.delete(`/criardadivas/${id}`)
-        .then(() => window.location.reload())
+        .then(() => window.alert("deletado"))
         .catch((err) =>
           window.alert(
             err + "\nAlguma ong já escolheu sua dádiva, entre em contato!"

@@ -15,7 +15,7 @@ function ModalEdit(props) {
       tipo: tipo.current.value,
       avaliacoes: avaliacao.current.value,
     })
-      .then(() => window.location.reload())
+      .then(() => window.alert("atualizado"))
       .catch((err) => {
         window.alert(err);
         console.log(err);

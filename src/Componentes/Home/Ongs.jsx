@@ -5,7 +5,7 @@ export const Ongs = () => {
     <div className="app-header">
       <main>
         <section style={{ padding: "10px" }} className="section">
-          <h3>
+          <h3 className="tituloPrincipal">
             Esta área é onde as ongs poderão solicitar e escolher dádivas.
           </h3>
           <p>

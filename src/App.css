@@ -1,12 +1,14 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300;400&family=Lato:ital,wght@0,400;1,100;1,900&family=Roboto:wght@100;400;700&display=swap');
+
 
 
 header{
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 body {
-  font-family: Arial;
+  font-family: 'Roboto', sans-serif;
   background-image: url("Componentes/midia/migration-3129340.png");
   background-attachment: fixed;
   background-position: center;
@@ -14,7 +16,7 @@ body {
 
 header div {
   text-align: center;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 header div p a {
@@ -57,6 +59,10 @@ header div h3 {
   list-style: none;
   display: inline;
   position: relative;
+}
+
+p{
+  padding: 20px;
 }
 
   .menus li a {
@@ -209,15 +215,16 @@ header div h3 {
   align-self: center;
   width: 100%;
   padding: 20px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .frasepreta{
-
+  padding: 20px;
   color: rgb(0, 0, 0);
   font-weight: bold;
-  font-size: 45px;
-  
+  font-size: 35px;
+  text-transform: uppercase;
+  font-style: italic;
 }
 
 .jumb {
@@ -244,6 +251,7 @@ footer {
   padding-bottom: 10px;
   border-radius: 3px;
   text-align: center;
+  font-family: 'Roboto', sans-serif;
   font-weight: bold;
   max-width: 100%;
 }
@@ -297,7 +305,7 @@ main section h2 a:hover{
 
 .sobre {
   background-color: white;
-  font-family: 'Arial Rounded MT';
+  font-family: 'Roboto';
   font-size: 15px;
   margin-top: 20px;
   width: 70%;
@@ -341,9 +349,17 @@ main section h2 a:hover{
   animation: slidein 0.7s infinite alternate;
 
 }
-
+.displayz{
+  display: flex;
+  font-size: 80px;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
 .linksfontesz{
+  background-color: #30a6d9;
   font-style: normal;
+  border-radius: 3px;
 }
 
 @media (max-width: 500px) {
@@ -439,7 +455,7 @@ main section h2 a:hover{
   }
   .menus li:hover ul {
       display: block;
-      background-color: aquamarine;
+      background-color: #30a6d9;
   }
 
   .menus li ul a {
@@ -456,6 +472,15 @@ main section h2 a:hover{
   
 }
 
+.tituloPrincipal{
+  font-family: 'Roboto', sans-serif;
+  color: #30a6d9;
+  font-weight: 600;
+  padding: 30px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
 .app-header{
   min-height: 90vh;
 }
@@ -463,3 +488,12 @@ main section h2 a:hover{
 .formsub{
   text-align: center;
 }
+
+@media (max-width: 1202px){
+  .index{
+  flex-direction: column;
+  }
+  
+
+}
+

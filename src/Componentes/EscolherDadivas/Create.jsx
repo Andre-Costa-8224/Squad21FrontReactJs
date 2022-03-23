@@ -50,7 +50,7 @@ const EscolherCreate = () => {
         dadiva: ajuda,
       },
     })
-      .then(() => window.location.assign("/escolherindex"))
+      .then(() => window.alert("escolhido"))
       .catch((err) => window.alert(err));
   };
 

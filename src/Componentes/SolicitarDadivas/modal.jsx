@@ -19,7 +19,7 @@ function ModalEdit(props) {
       endereco: endereco.current.value,
       dadiva: dadiva.current.value,
     })
-      .then(() => window.location.reload())
+      .then(() => window.alert("Atualizado!"))
       .catch((err) => {
         window.alert(err);
         console.log(err);
