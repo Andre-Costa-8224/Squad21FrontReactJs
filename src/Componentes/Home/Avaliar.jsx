@@ -9,6 +9,7 @@ export const Avaliate = () => {
           <h3 className="tituloPrincipal">Esta área é onde você poderá avaliar o nosso site.</h3>
           <p>Entre no link abaixo para comentar</p>
           <li>
+            <h3 className="text-danger">ATENÇÃO: NOSSO SERVIDOR ESTÁ COM PROBLEMAS</h3>
             <Link className="text-dark bg-light" to={"/avaliacaoindex"}>
               Página de avaliações
             </Link>
