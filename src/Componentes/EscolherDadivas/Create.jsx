@@ -51,7 +51,7 @@ const EscolherCreate = () => {
       },
     })
       .then(() => window.alert("escolhido"))
-      .catch((err) => window.alert(err));
+      .catch((err) => window.alert(err.message));
   };
 
   const userStorage = localStorage.getItem("user");
