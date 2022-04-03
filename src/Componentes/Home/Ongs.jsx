@@ -12,6 +12,7 @@ export const Ongs = () => {
             Caso tenha dúvidas sobre algum assunto relacionado, entre em contato
             conosco através do nosso email: squad21github@gmail.com
           </p>
+          <h3 className="text-danger">ATENÇÃO: NOSSO SERVIDOR ESTÁ COM PROBLEMAS</h3>
         </section>
         <section
           style={{ width: "40%", display: "flex", justifyContent: "center" }}
