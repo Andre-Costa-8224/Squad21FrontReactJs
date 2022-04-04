@@ -25,17 +25,13 @@ import Cadastro from './Componentes/Usuario/Subscribe';
 import { AuthProvider } from './Providers/auth';
 
 function App() {
-
+  const load = <div class="spinner-border" role="status"><span class="visually-hidden">Loading...</span></div>
   return (
     <AuthProvider className="App-header">
       <BrowserRouter>
       <Header></Header>
         <Routes>
-        <Suspense fallback={
-          <div class="spinner-border" role="status">
-            <span class="visually-hidden">Loading...</span>
-          </div>
-        }>
+        
         <Route path='/' exact element={<Indexhome/>}/>
           <Route path='/sobre' element={<About/>}/>
           <Route path='/ongs' element={<Ongs/>}/>
@@ -43,7 +39,9 @@ function App() {
           <Route path='/avaliacao' element={<Avaliate/>}/>
           <Route path='/login' element={<Login/>}/>
           <Route path='/recovery' element={<Recovery/>}/>
+          <Suspense fallback={}>
           <Route path='/perfil' element={<Perfil/>}/>
+          </Suspense>
           <Route path='/cadastro' element={<Cadastro/>}/>
           <Route path='/atendercriar' element={<CreateAtender/>}/>
           <Route path='/atenderindex' element={<IndexAtender/>}/>
@@ -55,7 +53,6 @@ function App() {
           <Route path='/escolherindex' element={<EscolherIndex/>}/>
           <Route path='/solicitarcriar' element={<SolicitarCriar/>}/>
           <Route path='/solicitarindex' element={<SolicitarIndex/>}/>
-          </Suspense>
         </Routes>
         <Footer/>
       </BrowserRouter>
