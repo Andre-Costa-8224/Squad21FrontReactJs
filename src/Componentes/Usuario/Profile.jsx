@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useAuth } from "../../Providers/auth";
 import Api from "../../Service/api";
+import { Suspense } from 'react';
 import ModalEdit from "./modal";
 
 function Perfil() {
@@ -103,8 +104,9 @@ function Perfil() {
     }
     return("")
   })
-
+  
   return (
+    <Suspense fallback={<h1>...</h1>}>
     <div className="app-header">
       <h2
         className="text-light border bg-primary"
@@ -131,6 +133,7 @@ function Perfil() {
         ""
       )}
     </div>
+    </Suspense>
   );
 }
 
