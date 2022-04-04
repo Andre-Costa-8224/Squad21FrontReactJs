@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useAuth } from "../../Providers/auth";
 import Api from "../../Service/api";
-import { Suspense } from 'react';
+import { Suspense, lazy } from 'react';
 import ModalEdit from "./modal";
 
 function Perfil() {
