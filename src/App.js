@@ -31,7 +31,6 @@ function App() {
       <BrowserRouter>
       <Header></Header>
         <Routes>
-        
         <Route path='/' exact element={<Indexhome/>}/>
           <Route path='/sobre' element={<About/>}/>
           <Route path='/ongs' element={<Ongs/>}/>
@@ -39,7 +38,7 @@ function App() {
           <Route path='/avaliacao' element={<Avaliate/>}/>
           <Route path='/login' element={<Login/>}/>
           <Route path='/recovery' element={<Recovery/>}/>
-          <Suspense fallback={}>
+          <Suspense fallback={load}>
           <Route path='/perfil' element={<Perfil/>}/>
           </Suspense>
           <Route path='/cadastro' element={<Cadastro/>}/>
