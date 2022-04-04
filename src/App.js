@@ -25,7 +25,7 @@ import Cadastro from './Componentes/Usuario/Subscribe';
 import { AuthProvider } from './Providers/auth';
 
 function App() {
-  const load = <div class="spinner-border" role="status"><span class="visually-hidden">Loading...</span></div>
+  //const load = <div class="spinner-border" role="status"><span class="visually-hidden">Loading...</span></div>
   return (
     <AuthProvider className="App-header">
       <BrowserRouter>
@@ -38,9 +38,9 @@ function App() {
           <Route path='/avaliacao' element={<Avaliate/>}/>
           <Route path='/login' element={<Login/>}/>
           <Route path='/recovery' element={<Recovery/>}/>
-          <Suspense fallback={<h1>...</h1>}>
+          
           <Route path='/perfil' element={<Perfil/>}/>
-          </Suspense>
+          
           <Route path='/cadastro' element={<Cadastro/>}/>
           <Route path='/atendercriar' element={<CreateAtender/>}/>
           <Route path='/atenderindex' element={<IndexAtender/>}/>
