@@ -1,6 +1,5 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
-import { Suspense } from 'react';
 import CreateAtender from './Componentes/AtenderDadivas/Create';
 import IndexAtender from './Componentes/AtenderDadivas/Index';
 import AvaliacaoCreate from './Componentes/Avaliacaos/Create';
